@@ -169,7 +169,7 @@ namespace gr {
 
       /* try to set MTU */
       if ((err = ioctl(sfd, SIOCSIFMTU, (void *) &ifr)) < 0) {
-	close(sfd);
+        close(sfd);
         return err;
       }
 
